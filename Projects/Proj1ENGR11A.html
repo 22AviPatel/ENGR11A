@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
@@ -25,25 +30,87 @@
     </style>
 </head>
 <body>
+            <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Brand logo placeholder -->
+                <a class="navbar-brand" href="#"></a>
+                <!-- Toggler for mobile responsiveness -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Home button directly on the navbar -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     <div class="container">
-        <!-- Blog Header -->
-        <h1 class="blog-header">Nametag</h1>
-        
-        <!-- Blog Main Text -->
-        <p class="blog-main">My goal was to be a bit creative with the font/or layout. So, I used PuraSlicer to experiment with changing the rotation of the font. It looks good and I’m pleased with it. In the actual print, I wasn’t attentive to what color the plastic would be, but I’m still pleased with the color. Then, I added the second color with the second spool. When I was actually hounding the final print in my hands I didn’t realize that there would be 3 circles on the bottom side. I didn’t even think about the bottom size of the print when I was editing it in PuraSlizer. Next time I would like to see if I can print something with more text like a luggage tag. Maybe I’ll print it in these machines as a prototype, but I’m curious how durable the material is.</p>
-        
-        <!-- Blog Image -->
-        <img src="assets/Project1/nametag.jpg" alt="nametag" class="blog-image">
-        
-        <h1 class="blog-header">Second Print</h1>
-        <img src="assets/Project1/horizontal.jpg" alt="vertical" class="blog-image">
-        <img src="assets/Project1/vertical.jpg" alt="horizontal" class="blog-image">
+    <!-- Blog Header -->
+    <h1 class="blog-header">Nametag</h1>
 
-        <!-- Blog Main Text -->
-        <p class="blog-main">
-        I printed a wire holder horizontally vs vertically. I noted the time difference between printing it horizontally (21 minutes) versus vertically (56 minutes). I believe that’s because the lateral movements are more common when printing it horizontally. Additionally, the horizontal version didn’t just have the obvious overhang on the top, but a second overhand on the bottom. I didn’t realize it at first, but then I saw it was highlighted in red. In future projects I’ll double-check by looking at the red highlights. When it came out, comparing both overhangs gave me a good benchmark for what I could get away with. The curves on the sides are ok, and because the overhangs aren’t super big (~inch) they almost worked.  I learned that the 3MF file is more specific whereas the STL file is more general. For instance, the 3MF file can save support structures, while the STL file will just save the original shape. The horizontal version came out very well, it feels durable and the small overhangs/notches worked. However, there was a small notch that we confirmed was an artifact of the print by looking at the gcode file. The outcome of the vertical print is below. 
-        </p>
-        <img src="assets/Project1/useless.jpg" alt="useless" class="blog-image">
+    <!-- Blog Main Text -->
+    <p class="blog-main">
+My goal was to be a bit creative with the font/or layout. So, I used PruzaSlicer to experiment with changing the rotation of the font. It looks good and I’m pleased with it. In the actual print, I wasn’t attentive to what color the plastic would be, but I’m still pleased with the color. Then, I added the second color with the second spool. When I was actually hounding the final print in my hands I didn’t realize that there would be 3 circles on the bottom side. I didn’t even think about the bottom size of the print when I was editing it in PruzaSlizer. Next time I would like to see if I can print something with more text like a luggage tag. Maybe I’ll print it in these machines as a prototype, but I’m curious how durable the material is.
+    </p>
+
+    <!-- Centered Nametag Image -->
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <img src="assets/Project1/nametag.jpg" alt="nametag" class="blog-image">
+        </div>
     </div>
+
+    <!-- Horizontal Line -->
+    <hr>
+
+    <!-- Second Print Section -->
+    <h1 class="blog-header">Second Print</h1>
+
+    <!-- Three Images Side by Side on Medium and Large Screens -->
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <img src="assets/Project1/horizontal.jpg" alt="horizontal" class="blog-image">
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <img src="assets/Project1/vertical.jpg" alt="vertical" class="blog-image">
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <img src="assets/Project1/useless.jpg" alt="useless" class="blog-image">
+        </div>
+    </div>
+
+    <!-- Blog Main Text -->
+    <p class="blog-main">
+        I printed a wire holder horizontally vs vertically. I noted the time difference between printing it horizontally (21 minutes) versus vertically (56 minutes). I believe that’s because the lateral movements are more common when printing it horizontally. Additionally, the horizontal version didn’t just have the obvious overhang on the top, but a second overhand on the bottom. I didn’t realize it at first, but then I saw it was highlighted in red. In future projects I’ll double-check by looking at the red highlights. When it came out, comparing both overhangs gave me a good benchmark for what I could get away with. The curves on the sides are ok, and because the overhangs aren’t super big (~inch) they almost worked.  I learned that the 3MF file is more specific whereas the STL file is more general. For instance, the 3MF file can save support structures, while the STL file will just save the original shape. The horizontal version came out very well, it feels durable and the small overhangs/notches worked. However, there was a small notch that we confirmed was an artifact of the print by looking at the gcode file. The outcome of the vertical print is below.     </p>
+</div>
+
+<!-- Custom CSS -->
+<style>
+    .blog-image {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* Ensures that the Nametag image is centered */
+    .row.justify-content-center {
+        justify-content: center;
+    }
+
+    /* Adjusts the images in Second Print section */
+    @media (min-width: 768px) {
+        .blog-image {
+            width: 100%;
+        }
+    }
+</style>
+
 </body>
 </html>

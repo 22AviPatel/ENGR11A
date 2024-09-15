@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <!-- Link to your main CSS file -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Additional styling for blog layout */
+        .blog-header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .blog-main {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .blog-image {
+            width: 40%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+            <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Brand logo placeholder -->
+                <a class="navbar-brand" href="#"></a>
+                <!-- Toggler for mobile responsiveness -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Home button directly on the navbar -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container">
+    <!-- Tinkercad Remix Section -->
+    <h1 class="blog-header">Tinkercad Remix</h1>
+
+    <!-- Blog Main Text -->
+    <p class="blog-main">
+        The goal if this project is to remix two 3D prints into a novel combined 3D print. My first task was to choose a way to remix. Rather than joining two objects together physically, I wanted to join to objects through their shapes; in the future, I want to work on interlocking shapes to make bigger objects. So, my goal was to make two things that 'fit' together. To start small, the simpliest example is something that clips into something else. I chose a carabiner and a corresponding nametag with a sizable hole to fit the carabiner.
+    </p>
+
+    <!-- Row for the first image (Sketch) -->
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <img src="assets/Project2/drawing.jpg" alt="drawing" class="blog-image">
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <p class="blog-main">
+                Firstly, I would make the nametag in Tinkercad, I added letters to a plate until I spelled out my name. Then I practiced aligning more than one line by writing out my address and so on. I realized halfway through typing this that this is my personal information, so I awkwardly cropped it out. After finding a cool carabiner, the next step was making sure the hole was big enough for the carabiner. In Tinkercad, I rotated it around to position it in the hole of the nametag. This felt like a 'brute force' approach to aligning two obects, so I'd like to learn if there was a better way. The carabiner came out great, and it fit well onto the nametag. 
+            </p>
+        </div>
+    </div>
+
+    <!-- Row for second and third images -->
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <img src="assets/Project2/tightfit.jpg" alt="tightfit" class="blog-image">
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <img src="assets/Project2/carabiner.jpg" alt="nametag" class="blog-image">
+        </div>
+    </div>
+
+    <p class="blog-main">
+        However, there is room for improvement. As you can see, there is a bulky support on the inside of the carabiner. This turns out to limit the angles something can hang from it. In my next draft, I would like to remove the support to see if it holds up. This will not only help me test the limits of the material but help me get used to adding/subtracting material in Fusion. Additionally, the letters on the nametag stick out a bit too much, and I want to sink them into the material a bit more.
+    </p>
+
+    <!-- Horizontal Line -->
+    <hr>
+
+    <!-- Fusion Remix Section -->
+    <h1 class="blog-header">Fusion Remix</h1>
+
+    <!-- Row for fourth image and text -->
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <img src="assets/Project2/fusion.jpg" alt="fusion" class="blog-image">
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <p class="blog-main">
+                My next task was to remove material from the Tinkercad model. Fusion was a lot more complex, and had a confusing mix of 2d adn 3d tools that I quickly learned to discriminate. For example, since a sketch is 2D, I accidentally made it face the wrong way on my first try. Eventually, I used the sketch and extrude tools to delete certain areas. 
+            </p>
+        </div>
+    </div>
+
+    <p class="blog-main">
+        This resulted in another carabiner, but this time with more flexibility. For example, the nametage can now slide a full 360 degress around the carabiner. In the future, I can print the nametag with two colors when time allows. In this case, I would have printed the carabiner and nametag separately so the carabiner was one color.
+    </p>
+
+    <!-- Row for fifth image -->
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6">
+            <img src="assets/Project2/carabinerv2.jpg" alt="carabinerv2" class="blog-image">
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS -->
+<style>
+    .blog-header {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .blog-main {
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+
+    .blog-image {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* Ensures images align next to each other on medium and large screens */
+    @media (min-width: 768px) {
+        .row .blog-image {
+            width: 100%;
+        }
+    }
+
+    /* Horizontal Line */
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #ccc;
+        margin: 40px 0;
+    }
+</style>
+
+
+</body>
+</html>
