@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <!-- Link to your main CSS file -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Additional styling for blog layout */
+        .blog-header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .blog-main {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .section-header-large {
+            font-size: 2em; /* Larger font size for the large header */
+            margin: 20px 0;
+        }
+
+        .section-header-small {
+            font-size: 1.5em; /* Smaller font size for the smaller header */
+            margin: 10px 0;
+        }
+        .blog-image {
+            width: 40%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Brand logo placeholder -->
+            <a class="navbar-brand" href="#"></a>
+            <!-- Toggler for mobile responsiveness -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Home button directly on the navbar -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <h1 class="blog-header">Open-Source Assistive Technology</h1>
+
+        <div class="d-flex justify-content-center">
+            <!-- Offset 3 columns on the left and right to center content -->
+            <div class="col-md-8 offset-md-1.5">
+                <!-- Blog Main Text -->
+                
+                <p class="blog-main">
+                    Prosthetics are expensive, and take time to get right. However, with 3D printing more widely available, <a href="https://enablingthefuture.org" target="_blank">E-NABLE</a> is an organization that compiles resources to print prosthetic hands yourself. The goal of this project was to assemble one of these prosthetics. To make it easier we were to print it at 150% scale. I noted that this website had a lot of resources for choosing what design to use:</p> 
+              <img src="assets/Project4/designs.jpg" alt="braille" class="img-fluid">
+                     <p class="blog-main">
+                    And fitting these hands for a client</p> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ewdC3BVUNmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <p class="section-header-large">
+                    Printing
+                </p>
+                <p class="blog-main">
+                    As this is the most complex geometry we've printed, there were bound to be an overhang or two. We first decided to print the palm with supports, but after it ended up as a cluster of plastic. So, we printed it without supports instead. This left a small overhang that was cleaned up with some sandpaper.</p> 
+
+                 <img src="assets/Project4/overhang.jpg" alt="braille" class="img-fluid">
+                <p class="section-header-large">
+                    Assembly
+                </p>
+                <p class="blog-main">
+                    Adding the strings. As I saw with the PLA 3D printed alarm clock, the geometry wasn't exact, and the tensor pins needed to be sanded down to fit properly. After that, the strings were attached and the hand fit together and looked good!
+                    <img src="assets/Project4/hand.jpg" alt="braille" class="img-fluid">
+
+                </p>
+                <p class="section-header-large">
+                    Modification
+                </p>
+                <p class="blog-main">
+                    This design can be improved. My partner on this project, Gabriella, described the hand as stiff, almost like a Thanos infinity gauntlet toy. </p>
+              <img src="assets/Project4/gauntlet.jpeg" alt="braille" class="img-fluid">
+                <p class="blog-main">
+                    When I was perusing prosthetics on Youtube. I found this prosthetic for a 'third' thumb. 
+                </p>
+                                <!-- YouTube video embed -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UI-t21QcXM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="blog-main">
+                    The idea is that with a thumb on both sides of your palm, you can grip objects a bit better. It seemed a bit paradoxical, but by diverging from a design that looks like a human hand, we could create a hand that feels more natural. Here, I used Norman's idea of divergent thinking to free myself from a design that stuck to what I thought I needed (a better hand) and found that I really needed (a better way to grip). In his words, I found the right problem. </p>
+                    <img src="assets/Project4/Norman.jpg" alt="braille" class="img-fluid">
+
+                     <p class="blog-main">
+                    The modification would be simple by just adding a thumb on the other side of the palm.
+                </p>
+
+              <img src="assets/Project4/palm.jpg" alt="braille" class="img-fluid">
+              <p class="section-header-large">
+                    Conclusion
+              <p class="blog-main">
+                    I can see the confluence of online resources such as E-NABLE, rapid prototyping, and design thinking. Firstly, the website does a good job of acknowledging that it's hard to get it right on the first try. Sometimes a hand will be too small, or too big! Rapid prototyping allows you to not get it right on the first try, and keep iterating until something fits. Then, improving on the design required me to think outside of the box, which is where divergent thinking was helpful.
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom CSS -->
+    <style>
+        .blog-header {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .blog-main {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .blog-image {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Ensures images align next to each other on medium and large screens */
+        @media (min-width: 768px) {
+            .row .blog-image {
+                width: 100%;
+            }
+        }
+
+        /* Horizontal Line */
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 40px 0;
+        }
+    </style>
+
+</body>
+</html>
